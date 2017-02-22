@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='techApp'>
 <head>
 	<meta charset="UTF-8">
 	<title>Tech Wish List</title>
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="styles.css">
 
 	
 
 </head>
-<body>
+<body ng-controller='mainController'>
+	<h1>Tech Wishlist</h1>
+	<!-- <nav class='navbar navbar-default'>
+		<ul class="nav nav-tabs nav-justified">
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+	</nav> -->
+	 
+	<ng-view></ng-view>
 
+	<div wishlist='warren'></div>
 
-	
 
 	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js'></script>
 	<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js'></script>
 	<script src='app.js'></script>
+<!-- 	//  <script src='otherTech/otherTech.js'></script>
+	// <script src='computerTech/computerTech.js'></script>
+	// <script src='directives/directive.js'></script> -->
 </body>
 </html>
